@@ -1,9 +1,12 @@
-function validateForm() {
-  // Example for Name validation in Create Account form
-  let name = document.forms["createAccountForm"]["name"].value;
-  if (name === "") {
-    alert("Name must be filled out");
-    return false;
-  }
-  // Add similar validations for Email, Password, Deposit, and Withdraw
-}
+document.addEventListener("DOMContentLoaded", function() {
+  const path = window.location.pathname.split("/").pop();
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  navLinks.forEach(link => {
+    if (link.getAttribute('href') === path) {
+      link.closest('.nav-item').classList.add('active');
+    } else {
+      link.closest('.nav-item').classList.remove('active');
+    }
+  });
+});
