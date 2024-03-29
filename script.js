@@ -44,5 +44,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Add similar event listeners for 'depositForm' and 'withdrawForm' based on your needs
+    // Add similar event listeners for 'depositForm' and 'withdrawForm' based on needs
 });
